@@ -3,44 +3,59 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Parse App</title>
-  <meta name="description" content="My Parse App">
-  <meta name="viewport" content="width=device-width">
+  <title>KKY-TBS Prospective Membership Tool</title>
+  <meta name="description" content="Tool for Candidates to learn Principles, History, and Leadership, and to track Interviews.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="gradient">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-  <div id="main">
-    <h1>You're ready to use Parse!</h1>
+  <div class="container">
+    <div>
+      <div id="main">
+        <h1>Welcome to the Kappa Kappa Psi - Tau Beta Sigma Prospective Membership Tool!</h1>
 
-    <p>Read the documentation and start building your JavaScript app:</p>
+        <p>This tool was designed with new Candidates in mind, so that you may easily obtain a wealth of knowledge regarding
+          the Candidate process in one simple location, regardless of your affiliation!</p></br>
 
-    <ul>
-      <li><a href="https://www.parse.com/docs/js_guide">Parse JavaScript Guide</a></li>
-      <li><a href="https://www.parse.com/docs/js">Parse JavaScript API Documentation</a></li>
-    </ul>
-
-    <div style="display:none" class="error">
-      Looks like there was a problem saving the test object. Make sure you've set your application ID and javascript key correctly in the call to <code>Parse.initialize</code> in this file.
-    </div>
-
-    <div style="display:none" class="success">
-      <p>We've also just created your first object using the following code:</p>
-
-        <code>
-          var TestObject = Parse.Object.extend("TestObject");<br/>
-          var testObject = new TestObject();<br/>
-          testObject.save({foo: "bar"});
-        </code>
+        <ul style="text-align:left">
+          <u>One can use this tool to</u>:</br>
+          <li> Study the History of the Fraternity or Sorority </li>
+          <li> Learn more about the Active Chapters </li>
+          <li> Track Interviews quickly and easily </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-danger">Danger</button>
     </div>
   </div>
 
+<!-- PARSE CODE STRUCTURE
   <script type="text/javascript">
     Parse.initialize("InANTLFid5husUCuYc4gbaq97qUTV8uNDwsxhrUb", "Dd0ZivjCzyQe7rOjtRFXSU78WpQvxt0nnLeuWKwF");
 
@@ -54,7 +69,7 @@
         $(".error").show();
       }
     });
-  </script>
+  </script> -->
 </body>
 
 </html>
