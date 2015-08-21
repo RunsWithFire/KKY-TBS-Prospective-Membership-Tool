@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h2= title
+  form(name="loginForm", action="/getUser", method="get")
+    |  Username
+    input(type="text", name="username" placeholder="username")
+    |  Password
+    input(type="text" name="password" placeholder="password")
+
+    input(type="submit", value="Submit")
